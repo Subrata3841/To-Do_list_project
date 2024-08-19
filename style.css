@@ -80,12 +80,6 @@ nav{
     flex: 1; /* Takes up the remaining space below the header */
 }
 .main{
-    /* width: 100%;
-    height: 90vh;
-    position: absolute;
-    display: flex;*/
-    /* align-items: center;
-    justify-content: center;  */
     max-width: 600px; /* Set a max width for the box */
     padding: 20px; /* Add space inside the box */
     background-color: rgba(20, 17, 17, 0.7); /* Light background color */
@@ -93,12 +87,6 @@ nav{
     box-shadow: 0 4px 15px rgba(150, 140, 140, 0.6); /* Shadow effect */
     width: 100%; /* Ensure it doesn't exceed the width */
 }
-/* .main img {
-    display: block;
-    margin:auto;
-    height: 100%;
-    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0));
-} */
 .content{
     width: 100%;
     height: 100%;
@@ -120,18 +108,6 @@ h1{
    color: #F5DEB3;
 }
 .input{
-    /* width: 270px;
-    border-radius: 5px;
-    padding: 10px; 
-    display: flex;
-    align-items:flex-start;
-    border: none;
-    background-color: #f4f4f4;
-    /* outline: none;*/
-    /* font-size: 18px;
-    gap: 10px;
-    margin-bottom: 20px;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); */ 
     display: flex;  
     align-items: center;  
     justify-content: space-between;  
@@ -143,17 +119,6 @@ h1{
     margin-bottom: 20px; /* Space below the input box */  
 }
 input.todo_value{
-    /* cursor: inherit;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-family: "Edu VIC WA NT Beginner", cursive;
-    flex: 1;
-    padding: 8px;
-    border: none;
-    border-bottom: 2px solid rgb(94, 41, 21);
-    outline: none;
-    font-size: 15px; */
     flex: 1; /* Allow input to take available space */  
     padding: 10px; /* Padding inside the input */  
     border: 1px solid #ccc; /* Border for the input */  
@@ -185,14 +150,6 @@ button:hover {
     border-radius: 5px;
     margin-bottom: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    /* position: relative;
-    background-color: rgb(94, 41, 21);
-    color: white;
-    font-size: 19px;
-    padding: 10px 40px 10px 10px;
-    text-align: left;
-    margin-bottom: 10px;
-    border-radius: 4px; */
 }
 .text ul i{
     position: absolute;
