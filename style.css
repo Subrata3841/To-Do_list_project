@@ -1,0 +1,203 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    display: flex; /* Use Flexbox on the body */
+    flex-direction: column;
+}
+header{
+    width: 1005;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container {
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display:flex;
+    gap: 14px;
+    align-items: center;
+}
+.logo img{
+    height: 35px;
+    width: 30px;
+}
+.logo p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F5DEB3;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+ul a:hover li {
+    color: #FFD700;  /* Change text color on hover */
+    background-color: #004400; /* Change background color on hover */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 5px 10px; /* Optional: Add padding for better visual effect */
+}
+ul a:hover li {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+ul{
+    display: flex;
+    gap:14px;
+    list-style: none;
+    margin-left: -20px;
+}
+li{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Takes up the remaining space below the header */
+}
+.main{
+    /* width: 100%;
+    height: 90vh;
+    position: absolute;
+    display: flex;*/
+    /* align-items: center;
+    justify-content: center;  */
+    max-width: 600px; /* Set a max width for the box */
+    padding: 20px; /* Add space inside the box */
+    background-color: rgba(20, 17, 17, 0.7); /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(150, 140, 140, 0.6); /* Shadow effect */
+    width: 100%; /* Ensure it doesn't exceed the width */
+}
+/* .main img {
+    display: block;
+    margin:auto;
+    height: 100%;
+    filter: drop-shadow(20px 20px 40px rgba(0, 0, 0, 0));
+} */
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .container{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+    height: 100%;
+    padding-top: 45px;
+}
+h1{
+   padding-left: 50px;
+   color: #F5DEB3;
+}
+.input{
+    /* width: 270px;
+    border-radius: 5px;
+    padding: 10px; 
+    display: flex;
+    align-items:flex-start;
+    border: none;
+    background-color: #f4f4f4;
+    /* outline: none;*/
+    /* font-size: 18px;
+    gap: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); */ 
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    padding: 15px; /* Add padding */  
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */  
+    border-radius: 8px; /* Rounded corners */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */  
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space below the input box */  
+}
+input.todo_value{
+    /* cursor: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(94, 41, 21);
+    outline: none;
+    font-size: 15px; */
+    flex: 1; /* Allow input to take available space */  
+    padding: 10px; /* Padding inside the input */  
+    border: 1px solid #ccc; /* Border for the input */  
+    border-radius: 2px; /* Rounded corners for the input */  
+    font-size: 16px; 
+    
+}
+button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.text ul{
+    position: relative; 
+    background-color: rgba(54, 66, 5, 0.8); /* Slightly transparent background */
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* position: relative;
+    background-color: rgb(94, 41, 21);
+    color: white;
+    font-size: 19px;
+    padding: 10px 40px 10px 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 4px; */
+}
+.text ul i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers the icon vertically */
+    cursor: pointer;
+}
